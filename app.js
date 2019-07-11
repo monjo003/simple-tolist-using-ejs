@@ -34,7 +34,7 @@ app.post("/", function(req, res) {
 
   let item = req.body.newItem;
 
-  if (req.body.newItem === "work") {
+  if (req.body.list === "work") {   // list is the name of the button
     workItems.push(item);
     res.redirect("/work");
 
