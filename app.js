@@ -19,8 +19,8 @@ app.get("/", function(req, res) {
 
 
 
- let day = date();
- 
+ let day = date.getDay();
+
   res.render("list", {listTitle: day, newListItems: items  }); // "list" get the html from views/list.ejs
   //items the array where the todos are stored
 });
